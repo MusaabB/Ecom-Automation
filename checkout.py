@@ -23,10 +23,9 @@ def proceed_to_checkout(driver):
         EC.presence_of_element_located((By.XPATH, '//div[@data-qa="checkout-page"]'))
     )
 
-    # Add further logic to fill in the required checkout information, such as shipping address, payment method, etc.
-    # Depending on the website's flow, you may need to interact with multiple pages/forms to complete the checkout process.
-    # Note that this implementation may vary depending on the specific website and its structure.
-
+    # Extend the script to include logic for entering the required checkout details, such as the shipping address, payment method, and other 
+   # necessary information. Depending on the website's checkout flow, you may need to navigate through
+  #  multiple pages or forms to complete the process.
     # Example: Fill in the shipping address
     address_input = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//input[@data-qa="address-input"]'))
